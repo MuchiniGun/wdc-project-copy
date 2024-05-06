@@ -51,6 +51,28 @@
           friends in need. Join us today and let's make every paw 
           count!"
         />
+        <PollCard 
+          title="Should Event #1 Be Re-Scheduled?"
+          content="Due to heavy rains predicted on the day of event 
+          1, we are considering rescheduling this event to a later 
+          date. However, if the community believes that it is important 
+          to pursue this event, we can vote upon it.
+          Due to heavy rains predicted on the day of event 
+          1, we are considering rescheduling this event to a later 
+          date. However, if the community believes that it is important 
+          to pursue this event, we can vote upon it.
+          Due to heavy rains predicted on the day of event 
+          1, we are considering rescheduling this event to a later 
+          date. However, if the community believes that it is important 
+          to pursue this event, we can vote upon it."
+        />
+        <EventCard 
+          eventPhoto="https://lh4.googleusercontent.com/Jko2qY8vT5da2GjL601whdRxiBXgJ5vhG7BTbYWCIUgDfzA65MyJMFBOd3XVl2Wdh4gQ4jGFC6zIPRHnPsCIbmj8nXaP0qve7_8LGzvM7oCJ62BnQLG1ryUowOF7P7E4qSmhT_UrrePtmE7V4tTZsn2Idc63H8J03eWhCzPfSMg5RkcVmeSEvGFOFKNHpg"
+          title="Puppy Washing"
+          location="Adelaide oval"
+          time="10AM"
+          numRSVPS="125"
+        />
       </div>
 
     </div>
@@ -63,6 +85,8 @@ import Navbar from './components/Navbar.vue'
 import GeneralBranchCard from "./components/GeneralBranchCard.vue"
 import ButtonComponent from './components/ButtonComponent.vue'
 import PostComponent from './components/PostComponent.vue'
+import PollCard from './components/PollCard.vue';
+import EventCard from './components/EventCard.vue';
 
 export default {
   name: 'App',
@@ -70,7 +94,9 @@ export default {
     Navbar,
     GeneralBranchCard,
     ButtonComponent,
-    PostComponent
+    PostComponent,
+    PollCard,
+    EventCard
   },
   methods: {
     joinBranch() {

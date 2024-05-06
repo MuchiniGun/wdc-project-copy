@@ -32,11 +32,9 @@
     },
     methods: {
       findOpportunity() {
-        // Placeholder for find opportunity functionality
         alert('Finding opportunities...');
       },
       signUp() {
-        // Placeholder for signup functionality
         alert('Sign up process...');
       }
     }
