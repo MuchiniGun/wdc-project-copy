@@ -51,6 +51,7 @@
     background-color: var(--color-background); 
     padding: 10px 20px;
     border-radius: var(--border-radius);
+    outline: 2px solid #000; 
   }
 
   .logo-wrapper {

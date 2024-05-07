@@ -12,14 +12,6 @@
           :is-private="true"
           number-of-members="16000"
         />
-        <GeneralBranchCard
-          profile-picture="https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630"
-          branch-name="Arry"
-          branch-address="runs"
-          about-text="lol"
-          :is-private="true"
-          number-of-members="1"
-        />
         <div>
           <ButtonComponent
             type="primary"
@@ -73,6 +65,7 @@
           time="10AM"
           numRSVPS="125"
         />
+        <AdminSidebar />
       </div>
 
     </div>
@@ -87,6 +80,7 @@ import ButtonComponent from './components/ButtonComponent.vue'
 import PostComponent from './components/PostComponent.vue'
 import PollCard from './components/PollCard.vue';
 import EventCard from './components/EventCard.vue';
+import AdminSidebar from './components/AdminSidebar.vue';
 
 export default {
   name: 'App',
@@ -96,7 +90,8 @@ export default {
     ButtonComponent,
     PostComponent,
     PollCard,
-    EventCard
+    EventCard,
+    AdminSidebar
   },
   methods: {
     joinBranch() {
@@ -119,7 +114,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   margin-top: 50px;
-  background-color: rgb(95, 95, 95);
+  background-color: var(--color-pink);
   height: 100vh;
   width: 100vw;
 }
